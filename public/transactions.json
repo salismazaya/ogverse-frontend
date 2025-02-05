@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "tokenName": "Bitcoin", 
+        "abbreviation": "BTC",
+        "total": 100,
+        "value": "$24.812.1"
+    },
+    {
+        "id": 2,
+        "tokenName": "Bitcoin",
+        "abbreviation": "BTC",
+        "total": 100,
+        "value": "$24.812.1"
+    },
+    {
+        "id": 3,
+        "tokenName": "Bitcoin", 
+        "abbreviation": "BTC",
+        "total": 100,
+        "value": "$24.812.1"
+    },
+    {
+        "id": 4,
+        "tokenName": "Bitcoin", 
+        "abbreviation": "BTC",
+        "total": 100,
+        "value": "$24.812.1"
+    },
+    {
+        "id": 5,
+        "tokenName": "Bitcoin", 
+        "abbreviation": "BTC",
+        "total": 100,
+        "value": "$24.812.1"
+    },
+    {
+        "id": 6,
+        "tokenName": "Bitcoin", 
+        "abbreviation": "BTC",
+        "total": 100,
+        "value": "$24.812.1"
+    }
+]
