@@ -6,6 +6,7 @@
   "dependencies": {
     "@radixdlt/babylon-gateway-api-sdk": "^1.7.2",
     "@radixdlt/radix-dapp-toolkit": "^2.1.1",
+    "motion": "^12.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^7.1.3",
