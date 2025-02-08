@@ -27,9 +27,10 @@ export function CardTop() {
         </div>
       </div>
 
-      <Link to='/' className="reset-style_link">
-        <ConnectWalletBtn />
-      </Link>
+      <div className="reset-style_link">
+        {/* <ConnectWalletBtn /> */}
+        <radix-connect-button></radix-connect-button>
+      </div>
     </div>
   )
 }

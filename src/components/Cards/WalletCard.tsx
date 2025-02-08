@@ -16,7 +16,8 @@ export default function CardWallet() {
       </div>
 
       <Link to='/' className="reset-style_link">
-        <ConnectWalletBtn />
+        {/* <ConnectWalletBtn /> */}
+        <radix-connect-button />
         {/* connect wallet */}
       </Link>
     </div>
