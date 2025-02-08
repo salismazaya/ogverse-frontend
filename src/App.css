@@ -26,6 +26,7 @@
     /* font-family: "arial", sans-serif; */
     font-family: "DM Sans", serif;
     font-optical-sizing: auto;
+    /* @apply bg-gradient-to-b from-secondary/60 from-20% to-primary to-30%; */
     @apply bg-primary;
   }
 
@@ -38,7 +39,9 @@
   }
 
   main {
-    @apply min-h-screen relative bg-transparent;
+    @apply bg-gradient-to-b from-secondary/40 from-5% via-secondary/30 via-10% to-primary to-15%;
+    /* @apply min-h-screen relative bg-gradient-to-b from-secondary/5 from-3% via-primary via-15% to-primary to-20%; */
+    /* @apply min-h-screen relative bg-transparent; */
     /* @apply min-h-screen relative bg-primary; */
   }
 

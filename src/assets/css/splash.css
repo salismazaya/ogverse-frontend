@@ -1,0 +1,200 @@
+.splash-screen--container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2000;
+  background-color: #f0f0f0;
+}
+
+.splash-screen-backdrop {
+  position: absolute;
+  margin: auto;
+  width: 600px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  top: calc(50% + 30px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: #606060 0 1px 20px;
+}
+
+.splash-screen--animation {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+  /* // this new edit */
+  animation-duration: 0s;
+}
+
+.splash-screen--logo-container {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+
+.splash-screen--logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-name: logoAnimation, logoLoadingAnimation;
+  animation-iteration-count: 1, infinite;
+  animation-duration: 0.5s, 6s;
+  animation-delay: 0s, 1s;
+  animation-timing-function: linear, ease-out;
+  -webkit-animation-name: logoAnimation, logoLoadingAnimation;
+  -webkit-animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.5s, 6s;
+  -webkit-animation-delay: 0s, 1s;
+  -webkit-animation-timing-function: linear, ease-out;
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.splash-screen--circle-container {
+  position: absolute;
+  height: 100vh;
+  width: 200vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.splash-screen--circle {
+  position: fixed;
+  /* position:absolute; */
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-primary);
+  /* background-color:#009CEF; */
+  width: 150%;
+  /* width:100%; */
+  padding-bottom: 150%;
+  opacity: 0;
+  /* z-index: 9999; */
+  border-radius: 50%;
+  transform-origin: center;
+  animation-name: circleAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  -webkit-animation-name: circleAnimation;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes circleAnimation {
+  1% {
+    transform: scale(0.02) translate(-2500%, -2500%);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(0.02) translate(-2500%, -2500%);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* 1%   {  visibility: visible; opacity: 1; }
+    20%  {opacity: 1;}
+    80%   {transform:scale(0.02) translate(-2500%, -2500%); opacity: 1;}
+   100%  {transform:scale(0.02) translate(-2500%, -2500%);
+     opacity: 0;} */
+}
+
+@keyframes rocketAnimation {
+  0% {
+    opacity: 0;
+    right: -10%;
+    left: 20%;
+  }
+  /* 0%   { opacity:0; left:-7%; top:20%;} */
+  100% {
+    opacity: 1;
+    right: 0;
+    left: 0;
+  }
+}
+
+@keyframes logoAnimation {
+  /* 0%   {opacity:0; top:15%;}
+    50% {left:0; top:0;}
+    80% {left: -20%; top: 0;}
+    100% {left:-20%; top:0;} */
+  0% {
+    opacity: 0;
+    top: 15%;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes logoText {
+  0% {
+    opacity: 0;
+    top: 52.5%;
+  }
+  60% {
+    opacity: 0;
+    top: 52.5%;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+@keyframes logoLoadingAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  15% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.splash-screen--logo-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  margin-top: 50px;
+  /* margin-top: 75px; */
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  animation-name: logoText;
+  animation-duration: 1s;
+}
+
+.splash-screen--message {
+  position: absolute;
+  top: calc(50% + 160px);
+  width: 550px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 5px 0;
+  border-top: 1px solid #c0c0c0;
+}
