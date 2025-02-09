@@ -18,14 +18,14 @@ interface GameHistory {
 export function CardTop() {
   return (
     <div className="w-full h-auto flex flex-row justify-between items-center py-[12px] text-white">
-      <div className="flex flex-row items-center gap-2">
+      <Link to='/games/updown' className="flex flex-row items-center gap-2">
         <div className="relative w-10 overflow-hidden bg-cover">
           <img src="/src/assets/logo-up&down-game_S100.png" alt="" className="w-full mx-auto" />
         </div>
         <div className="text-sm font-medium tracking-wider leading-4 text-light-200">
           Up & Down <br />Games
         </div>
-      </div>
+      </Link>
 
       <Link to='/' className="reset-style_link">
         <ConnectWalletBtn />
