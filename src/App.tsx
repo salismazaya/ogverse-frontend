@@ -10,6 +10,7 @@ import Leaderboard from "./pages/leaderboard/Leaderboard";
 import Task from "./pages/task/Task";
 import Referral from "./pages/referral/Referral";
 import Game from "./pages/game/Game";
+import UpDownGame from "./pages/game/UpDownGame";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/tasks" element={<Task />} />
           <Route path="/games" element={<Game />} />
         </Route>
+        <Route path="/games/updown" element={<UpDownGame />} />
       </Routes>
     </BrowserRouter>
   );
